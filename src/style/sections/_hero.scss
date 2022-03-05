@@ -1,3 +1,7 @@
+html{
+  // overflow:hidden;
+}
+
 #hero {
   min-height: 100vh;
   height: 100vh;
@@ -14,17 +18,22 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-
+  width: 100%;
+  overflow: hidden;
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
+  // background: url("/src/assets/[your-image].png");
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
-
+  .hero-background{
+    z-index: 0;
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    filter: opacity(.02);
+  }
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
