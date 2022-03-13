@@ -38,6 +38,7 @@
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
+        color: $primary-color;
 
         @include respond(phone) {
           font-size: 2rem;
@@ -74,4 +75,31 @@
       }
     }
   }
+}
+
+
+.project__tag-list {
+  display: flex;
+  gap: 1rem;
+
+}
+.project__tag {
+  list-style-type: none;
+  display: inline-flex;
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+  background-color: $primary-color;
+  color: $white-color;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  cursor: default;
+}
+
+.project__subtitle {
+  font-size: 1.2rem;
+  color: $dark-grey;
+  border-bottom: 1px solid $dark-grey;
+}
+
+.project__body{
 }

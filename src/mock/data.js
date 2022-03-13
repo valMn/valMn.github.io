@@ -9,49 +9,85 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: `👋 Hi, I'm`,
-  name: 'Valentin Manaila',
-  subtitle: `and I'm a React Developer.`,
+  title: `Hi there 👋 I'm`,
+  name: ' Valentin',
+  subtitle: `a Full Stack Developer.`,
   cta: 'About me',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'vm_profile.jpg',
-  paragraphOne: 'fakfdfdfsd',
-  paragraphTwo: 'sdasdasdas',
-  paragraphThree: 'sdasdas',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  paragraphOne: `Bootcamp Graduate with an Architecture background 🧱 coming  into Software Development. ⌨️
+
+  My experience in designing and building architecture has been a huge advantage during my career transition.`,
+  list1: [
+    `Why❓ Let's 👀 :`,
+    '✔️ used to working on and solving complex, non-linear problems',
+    '✔️ created DRY sets of blueprints for contractors to build from',
+    '✔️ worked within teams to achieve a common goal - the building',
+    '✔️ designed bespoke details && implemented off the shelf systems',
+    '✔️ comfortable with not knowing all the answers to a problem ⁉️',
+    '✔️ focused on the process of problem solving, not the tools',
+    '✔️ focused on the process of problem solving, not the tools',
+    '✔️ self-taught: tailoring menswear, making lamps, photography...',
+  ],
+  paragraphTwo: `I'm a maker and a problem solver at heart. I thrive in dynamic environments and teams working together to solve a problem.`,
+  paragraphThree: `Get in touch, who knows what we will build together  <🔨>
+  `,
+  resume: 'https://drive.google.com/file/d/1RGwDN-IMfZd8WFTyUQFqmnVzlcGgpKKy/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'brainflix.png',
+    title: 'Video Streaming Site',
+    info1: 'React frontend + Express backend + CRUD',
+    info2: [
+      'This full stack application is designed using:',
+      'React hooks, front-end routing using React Router v5.3',
+      'Express server using MVC architecture',
+      'Fully hosted front and backend',
+      'Performs CRUD operations on videos, comments, likes',
+    ],
+    tags: ['REACT', 'JS', 'NODE', 'EXPRESS', 'MVC'],
+    url: 'https://vm-brainflix.netlify.app/',
+    repo: 'https://github.com/studioVMdev/valentin-manaila-brainflix', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'bansite.png',
+    title: 'Band Site',
+    info1: 'A fully responsive vanilla JS website + CRUD',
+    info2: [
+      'The site is designed with a mobile first approach in mind and uses BEM naming conventions and SASS',
+      'CRUD operations are also possible using a basic Heroku API and the data-id attribute',
+      'GET - Comments are fetched from the db using axios',
+      'POST - New comments are validated in the front-end first',
+      'PATCH - Like increment counter is implemented',
+      'DELETE - Comments removed from db and UI based on response status',
+    ],
+    tags: ['JS', 'HTML', 'SASS', 'BEM', 'FLEXBOX', 'AXIOS'],
+    url: 'https://priceless-lovelace-b57462.netlify.app/',
+    repo: 'https://github.com/studioVMdev/valentin-manaila-bandsite', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'trivia.png',
+    title: 'Two Player Trivia',
+    info1: 'Hackathon Project using vanilla JS and trivia API',
+    info2: [
+      'The project is written using OOP paradigm:',
+      '- Game class that holds the game state and calls the Rounds,',
+      '- Round class that calls two instances of the Card class,',
+      "- Card class that creates the cards, randomizes the answers and manages it's own validation,",
+      '- aUI class that manages the various menus.',
+    ],
+    tags: ['JS', 'HTML', 'SASS', 'FLEXBOX', 'AXIOS'],
+    url: 'https://naughty-raman-b6ca06.netlify.app/',
+    repo: 'https://github.com/studioVMdev/bstn-hackathon-trivia', // if no repo, the button will not show up
   },
 ];
 
@@ -68,7 +104,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/valentin-manaila-152ab768/',
+      url: 'https://www.linkedin.com/in/valentin-manaila',
     },
     {
       id: nanoid(),
@@ -80,5 +116,5 @@ export const footerData = {
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

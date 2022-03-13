@@ -1,4 +1,4 @@
-html{
+html {
   // overflow:hidden;
 }
 
@@ -20,6 +20,7 @@ html{
   z-index: -1;
   width: 100%;
   overflow: hidden;
+  // position: relative;
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
   // background: url("/src/assets/[your-image].png");
@@ -27,12 +28,12 @@ html{
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
-  .hero-background{
+  .hero-background {
     z-index: 0;
     position: absolute;
-    bottom: -50%;
-    right: -20%;
-    filter: opacity(.02);
+    top: -20%;
+    right: -30%;
+    filter: opacity(0.03);
   }
   .hero-title {
     font-size: 5.6rem;
@@ -56,6 +57,14 @@ html{
     }
   }
 
+  .hero-animation {
+    animation-name: wave-animation; 
+    animation-duration: 3.5s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+
   .hero-cta {
     display: flex;
 
@@ -70,5 +79,32 @@ html{
         font-size: 2rem;
       }
     }
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
   }
 }
