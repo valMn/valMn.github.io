@@ -35,7 +35,8 @@ export const aboutData = {
   paragraphTwo: `I'm a maker and a problem solver at heart. I thrive in dynamic environments and teams working together to solve a problem.`,
   paragraphThree: `Get in touch, who knows what we will build together  <🔨>
   `,
-  resume: 'https://drive.google.com/file/d/1RGwDN-IMfZd8WFTyUQFqmnVzlcGgpKKy/view?usp=sharing', // if no resume, the button will not show up
+  resume:
+    'https://docs.google.com/document/d/1v8lXfUlibDGXBCNAAhtC-aUo6o2AuTrSi74amTA4HXo/export?format=pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
