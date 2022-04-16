@@ -79,4 +79,7 @@
 .round-image {
   border-radius: 50%;
   border-radius: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  aspect-ratio: 1;
+  max-width: 350px;
+  max-height: 350px;
 }
