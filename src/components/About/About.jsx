@@ -66,7 +66,7 @@ const About = () => {
         </Row>
       </Container>
     </section>
-  );pnpm
+  );
 };
 
 export default About;
