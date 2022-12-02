@@ -53,7 +53,7 @@ export const projectsData = [
     ],
     tags: ['REACT', 'FIREBASE', 'CHARTJS', 'DAYJS'],
     url: 'https://www.planinsight.co.uk/',
-    repo: 'https://github.com/studioVMdev/decide-it-client', // if no repo, the button will not show up
+    repo: 'https://github.com/valMn/decide-it-client', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -69,7 +69,7 @@ export const projectsData = [
     ],
     tags: ['REACT', 'JS', 'NODE', 'EXPRESS', 'MVC'],
     url: 'https://vm-brainflix.netlify.app/',
-    repo: 'https://github.com/studioVMdev/valentin-manaila-brainflix', // if no repo, the button will not show up
+    repo: 'https://github.com/valMn/valentin-manaila-brainflix', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -84,7 +84,7 @@ export const projectsData = [
     ],
     tags: ['JS', 'HTML', 'SASS', 'BEM', 'FLEXBOX', 'AXIOS'],
     url: 'https://priceless-lovelace-b57462.netlify.app/',
-    repo: 'https://github.com/studioVMdev/valentin-manaila-bandsite', // if no repo, the button will not show up
+    repo: 'https://github.com/valMn/valentin-manaila-bandsite', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -100,7 +100,7 @@ export const projectsData = [
     ],
     tags: ['JS', 'HTML', 'SASS', 'FLEXBOX', 'AXIOS'],
     url: 'https://naughty-raman-b6ca06.netlify.app/',
-    repo: 'https://github.com/studioVMdev/bstn-hackathon-trivia', // if no repo, the button will not show up
+    repo: 'https://github.com/valMn/bstn-hackathon-trivia', // if no repo, the button will not show up
   },
 ];
 
@@ -122,7 +122,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'github',
-      url: 'https://github.com/studiovmdev',
+      url: 'https://github.com/valMn',
     },
   ],
 };

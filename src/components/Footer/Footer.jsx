@@ -40,7 +40,7 @@ const Footer = () => {
         <hr />
         <p className="footer__text">
           © {new Date().getFullYear()} - Valentin Manaila Dev Portfolio{' '}
-          <a href="https://studiovmdev.github.io/" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://valMn.github.io/" target="_blank" rel="noopener noreferrer"></a>
         </p>
 
         {/* {isEnabled && <GithubButtons />} */}
